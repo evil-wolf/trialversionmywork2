@@ -1,0 +1,12 @@
+<apex:page Controller="ViewProgram">
+<apex:form >
+<apex:selectList value="{!userSelect}" size="1">
+    <apex:selectOptions value="{!services}"/>
+</apex:selectList>
+<apex:selectList value="{!dateSelect}" size="1">
+    <apex:selectOptions value="{!dates}"/>
+</apex:selectList>
+<apex:commandButton value="Option" action="{!option}" rerender="out" status="status"/>
+<apex:commandButton value="Add Programs" action="{!addPrograms}" rerender="out" status="status"/>
+</apex:form>
+</apex:page>
